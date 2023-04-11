@@ -14,6 +14,9 @@
 body {
     background: linear-gradient(270deg, #7b7242 -0.9%, #5c3e12 100%);
 }
+
+/* Estilizando o header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -51,6 +54,31 @@ header > div > a > img {
     transition: 300ms;
 
 }
+.botao-log {
+    background: var(--laranja) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--branco);
+    transition: 300ms;
+}
+.botao-log:hover {
+    background: var(--laranja-hover) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--preto);
+    transition: 300ms;
+
+}
 header > div > a {
     margin-left: 20px;
 }
@@ -58,6 +86,18 @@ header > div {
     display: flex;
     align-items: center;
 }
+.perfil {
+    margin-right: 20px;
+    border-radius: 30px;
+    height: 50px;
+}
+@media (max-width: 700px){
+    .botao {
+        font-size: 0;
+        padding: 0;
+    }
+}
+/* Começando a estilizar a main */
 
 .imagem {
     width: 100%;
@@ -75,17 +115,24 @@ header > div {
 main > h1 {
     text-align: center;
     margin: 25px;
-    font-size: 80px;
+    font-size: 65px;
     color: var(--branco);
     text-shadow: 5px 4px 5px rgba(240, 162, 11, 0.56);
+    font-style: italic;
+}
+.main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bloco {
     background: linear-gradient(270deg, #DB9326 0%, rgba(136, 130, 80, 0.71) 100%);
     box-shadow: 10px 4px 10px rgba(224, 164, 10, 0.25);
     border-radius: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 21vw;
+    margin-right: 21vw;
     margin-bottom: 30px;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -97,14 +144,17 @@ main > h1 {
 .bloco > .div1 {
     width: 50%;
 }
+p {
+    color: var(--branco);
+}
 .bloco > .div1 > p {
     color: var(--branco);
 }
-.bloco > .div2 {
+.div2 {
     width: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 .botao-bloco {
     background: var(--laranja) ;
@@ -117,8 +167,7 @@ main > h1 {
     padding-bottom: 10px;
     color: var(--branco);
     transition: 300ms;
-    font-size: 30px;
-
+    font-size: 20px;
 }
 .botao-bloco:hover {
     background: var(--laranja-hover) ;
@@ -136,22 +185,56 @@ main > h1 {
     color: var(--branco);
     font-size: 25px;
     text-align: center;
-    width: 50%;
+
 }
 .bloco2 {
     background: linear-gradient(270deg, #DB9326 0%, rgba(136, 130, 80, 0.71) 100%);
     box-shadow: 10px 4px 10px rgba(224, 164, 10, 0.25);
     border-radius: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20vw;
+    margin-right: 20vw;
     margin-bottom: 30px;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 60px;
-    padding-right: 160px;
+    padding-right: 60px;
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 700px) {
+    .bloco {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .bloco2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .bloco > .div1 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .bloco > .div2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .div1a > p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .div2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 footer {
     margin: 50px;
     text-align: center;
@@ -186,8 +269,7 @@ footer > p {
     box-shadow: 10px 4px 10px rgba(224, 164, 10, 0.25);
     border-radius: 30px;
     margin-bottom: 100px;
-    margin-left: 550px;
-    margin-right: 550px;
+    max-width: 350px;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 40px;
@@ -230,4 +312,151 @@ footer > p {
 
 .nao {
     margin-bottom: 40px;
+}
+
+.imagem2 {
+    width: 100%;
+    background-image: url(../img/FundoFilmes.png);
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    box-shadow: 0px 10px 10px var(--amarelo);
+}
+.imagem2 > h1 {
+    margin-top: 10px;
+    font-size: 60px;
+}
+.imagem2 > h1 > a {
+    text-decoration: none;
+    color: var(--branco);
+    text-shadow: 5px 4px 5px rgba(240, 162, 11, 0.56);
+    transition: 250ms;
+}
+.imagem2 > h1 > a:hover {
+    text-decoration: none;
+    color: var(--branco);
+    text-shadow: 5px 4px 5px rgba(240, 162, 11, 0.56);
+    font-size: 70px;
+    transition: 250ms;
+}
+@media (max-width: 700px){
+    .imagem2 > h1 > a {
+        text-decoration: none;
+        color: var(--branco);
+        text-shadow: 5px 4px 5px rgba(240, 162, 11, 0.56);
+        transition: 250ms;
+        font-size: 40px;
+    }
+    .imagem2 > h1 > a:hover {
+        text-decoration: none;
+        color: var(--branco);
+        text-shadow: 5px 4px 5px rgba(240, 162, 11, 0.56);
+        font-size: 70px;
+        transition: 250ms;
+    }
+}
+.botao2 {
+    background: var(--laranja) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-decoration: none;
+    padding-left: 43px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--branco);
+    transition: 300ms;
+    width: 130px;
+    margin-left: 6vw;
+}
+.hr-cat {
+    border: 1px solid var(--laranja);
+    box-shadow: 0px 0px 8px var(--amarelo);
+    margin-bottom: 30px;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+}
+.conteudo2 {
+    height: 170px;
+    margin-left: 20px;
+    transition: 250ms;
+    box-shadow: 6px 4px 6px var(--laranja);
+}
+.conteudo2:hover {
+    height: 200px;
+    margin: 5px;
+    transition: 250ms;
+}
+.conteudo3 {
+    height: 170px;
+    margin-left: 18px;
+    transition: 250ms;
+}
+.conteudo3:hover {
+    height: 200px;
+    margin: 5px;
+    transition: 250ms;
+}
+.botao-cont {
+    background: var(--laranja) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--branco);
+    margin: 70px;
+    transition: 300ms;
+}
+.botao-cont:hover {
+    background: var(--laranja-hover) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--preto);
+    transition: 300ms;
+}
+.botao3 {
+    background: var(--laranja) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-decoration: none;
+    padding-left: 43px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--branco);
+    transition: 300ms;
+    width: 203px;
+    margin-left: 6px;
+}
+@media (max-width: 1500px){
+    .conteudo{
+        overflow: scroll;
+        display: flex;
+    }
+    .conteudo::-webkit-scrollbar{
+        width: 0px;
+        background: transparent;
+    }
+}
+@media (max-width: 700px){
+    h1 {
+        font-size: 30px;
+    }
+}
+.george{
+    margin-bottom: 20px;
+    box-shadow: 6px 4px 6px var(--laranja);
 }
