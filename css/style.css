@@ -379,17 +379,34 @@ footer > p {
 .conteudo{
     display: flex;
     align-items: center;
+    font-size: 0px;
 }
 .conteudo2 {
     height: 170px;
     margin-left: 20px;
     transition: 250ms;
     box-shadow: 6px 4px 6px var(--laranja);
+    border: 3px solid var(--laranja);
+    border-radius: 20px;
+    padding: 5px;
 }
 .conteudo2:hover {
     height: 200px;
     margin: 5px;
     transition: 250ms;
+    font-size: 15px;
+}
+.conteudo > div {
+    transition: 300ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo > div:hover {
+    font-size: 15px;
+    transition: 300ms;
+
 }
 .conteudo3 {
     height: 170px;
@@ -413,6 +430,7 @@ footer > p {
     color: var(--branco);
     margin: 70px;
     transition: 300ms;
+    font-size: 15px;
 }
 .botao-cont:hover {
     background: var(--laranja-hover) ;
